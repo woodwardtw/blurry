@@ -1,0 +1,27 @@
+ .blur-me .email a, 
+ .blur-me .column-username strong, 
+ .blur-me td.column-name {
+        filter: blur(4px);
+    }
+
+.blurry-button {
+    position: fixed;
+    bottom:  10px;
+    right:  20px;
+    background: yellow;
+    padding:  5px 10px;
+    border:  none;
+    border-radius: 50px;
+    width:  100px;
+    box-shadow: 1px 1px 2px #424242;
+    transition: all .3s ease;
+}
+
+.blurry-button.active {
+    background: lime;
+}
+
+.blurry-button:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #424242;
+}
