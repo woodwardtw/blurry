@@ -6,7 +6,7 @@ if (document.querySelector('.users-network, .users')){
 
 	//make our blur button
 	let btn = document.createElement("button");
-	btn.innerHTML = "Unblur";
+	btn.innerHTML = "Status: blurred";
 	btn.classList.add('blurry-button', 'active');
 	document.body.appendChild(btn);
 	
@@ -14,10 +14,10 @@ if (document.querySelector('.users-network, .users')){
 	btn.addEventListener("click", function (){
 		table.classList.toggle('blur-me');
 		btn.classList.toggle('active');
-		if(btn.innerHTML === "Unblur"){
-			btn.innerHTML = "Blur";
+		if(btn.innerHTML === "Status: blurred"){
+			btn.innerHTML = "Status: clear";
 		} else {
-			btn.innerHTML = "Unblur";
+			btn.innerHTML = "Status: blurred";
 		}
 	})
 }
